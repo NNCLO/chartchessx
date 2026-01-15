@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ChartChessX</title>
+<meta charset="UTF-8">
+<title>NNCLO</title>
 </head>
-<body>
-  <h1>Sedang Dikerjakan!!!</h1>
+<body class="grid-bg">
+
+<div class="canvas">
+<div class="logo">
+
+  <!-- N 5x5 -->
+  <div class="letter grid-5x5 green">
+    <div class="on"></div><div class="on"></div><div></div><div></div><div class="on"></div>
+    <div class="on"></div><div class="on"></div><div class="on"></div><div></div><div class="on"></div>
+    <div class="on"></div><div></div><div class="on"></div><div class="on"></div><div class="on"></div>
+    <div class="on"></div><div></div><div></div><div class="on"></div><div class="on"></div>
+    <div class="on"></div><div></div><div></div><div></div><div class="on"></div>
+  </div>
+
+  <!-- N 5x4 -->
+  <div class="letter grid-5x4 green">
+    <div class="on"></div><div></div><div></div><div class="on"></div>
+    <div class="on"></div><div class="on"></div><div></div><div class="on"></div>
+    <div class="on"></div><div></div><div class="on"></div><div class="on"></div>
+    <div class="on"></div><div></div><div class="on"></div><div class="on"></div>
+    <div class="on"></div><div></div><div></div><div class="on"></div>
+  </div>
+
+  <!-- C 5x4 -->
+  <div class="letter grid-5x4 gray">
+    <div class="on"></div><div class="on"></div><div class="on"></div><div class="on"></div>
+    <div class="on"></div><div></div><div></div><div></div>
+    <div class="on"></div><div></div><div></div><div></div>
+    <div class="on"></div><div></div><div></div><div></div>
+    <div></div><div class="on"></div><div class="on"></div><div class="on"></div>
+  </div>
+
+  <!-- L 5x5 -->
+  <div class="letter grid-5x5 gray">
+    <div class="on"></div><div class="on"></div><div></div><div></div><div></div>
+    <div class="on"></div><div class="on"></div><div></div><div></div><div></div>
+    <div class="on"></div><div class="on"></div><div></div><div></div><div></div>
+    <div class="on"></div><div class="on"></div><div></div><div></div><div></div>
+    <div class="on"></div><div class="on"></div><div class="on"></div><div class="on"></div><div class="on"></div>
+  </div>
+
+  <!-- O 5x6 -->
+  <div class="letter grid-5x6 gray">
+    <div></div><div class="on"></div><div class="on"></div><div class="on"></div><div class="on"></div><div></div>
+    <div class="on"></div><div class="on"></div><div></div><div></div><div class="on"></div><div class="on"></div>
+    <div class="on"></div><div class="on"></div><div></div><div></div><div class="on"></div><div class="on"></div>
+    <div class="on"></div><div class="on"></div><div></div><div></div><div class="on"></div><div class="on"></div>
+    <div></div><div class="on"></div><div class="on"></div><div class="on"></div><div class="on"></div><div></div>
+  </div>
+</div>
+
+<div class="tagline">Pixel · Code · Data</div>
+<h1 style="color: aliceblue;"> SEDANG DIKERJAKAN!!!!</h1>
 <a href="https://www.instagram.com/_n.clo/"
    target="_blank"
    class="instagram-btn">
@@ -13,12 +65,121 @@
        class="ig-icon">
   Instagram
 </a>
+ <br />
+ <br />
     <iframe frameborder="0" scrolling="auto" height="175" width="555" allowtransparency="true" marginwidth="0" marginheight="0" src="https://sslfxrates.investing.com/index_exchange.php?params&inner-border-color=%23CBCBCB&border-color=%23cbcbcb&bg1=%23F6F6F6&bg2=%23ffffff&inner-text-color=%23000000&currency-name-color=%23000000&header-text-color=%23FFFFFF&force_lang=1" align="center"></iframe>
-  <br /><div style="width:540px"><a href="http://www.investing.com" target="_blank"><img src="https://wmt-invdn-com.investing.com/forexpros_en_logo.png" alt="Investing.com" title="Investing.com" style="float:left" /></a>
-    <span style="float:right"><span style="font-size: 11px;color: #333333;text-decoration: none;">The Exchange Rates are powered by <a href="https://www.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com</a>.</span></span></div>
+  <br />
+  <div style="width:540px">
+    <a href="http://www.investing.com" target="_blank">
+        <img src="https://wmt-invdn-com.investing.com/forexpros_en_logo.png" alt="Investing.com" title="Investing.com" style="float:left" />
+    </a>
+    <span style="float:right"><span style="font-size: 11px;color: #333333;text-decoration: none;">The Exchange Rates are powered by 
+        <a href="https://www.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com</a>.
+    </span></span>
+    </div>
 
-<style>
-  .instagram-btn {
+    </div>
+</div>
+
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0b1116;
+  display: flex;
+  align-items: center;
+}
+
+.grid-bg {
+  min-height: 100vh;
+  background-color: #0b1118;
+
+  background-image:
+    /* titik-titik */
+    radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px),
+
+    /* grid kecil */
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+
+    /* grid besar */
+    linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+
+  background-size:
+    20px 20px,     /* dots */
+    20px 20px,     /* small grid */
+    20px 20px,
+    100px 100px,   /* large grid */
+    100px 100px;
+
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    0 0;
+}
+
+
+.canvas {
+  padding-left: 80px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+}
+
+.letter {
+  display: grid;
+  gap: 4px;
+}
+
+.grid-5x5 {
+  grid-template-columns: repeat(5, 14px);
+  grid-template-rows: repeat(5, 14px);
+}
+
+.grid-5x4 {
+  grid-template-columns: repeat(4, 14px);
+  grid-template-rows: repeat(5, 14px);
+}
+
+.grid-5x6 {
+  grid-template-columns: repeat(6, 14px);
+  grid-template-rows: repeat(5, 14px);
+}
+
+.letter div {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  background: transparent;
+}
+
+/* COLORS */
+.green .on {
+  background: linear-gradient(145deg, #8CFF78, #1DBA4E);
+}
+
+.gray .on {
+  background: linear-gradient(145deg, #d8d8d8, #8c8c8c);
+}
+
+/* TAGLINE */
+.tagline {
+  color: #cfd6dc;
+  font-size: 28px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+.instagram-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -39,7 +200,8 @@
     width: 20px;
     height: 20px;
   }
-</style>
+  </style>
+
+
 </body>
 </html>
-
